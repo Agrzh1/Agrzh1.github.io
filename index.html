@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.0.4/gsap.min.js"></script>
+  <script src="http://code.jquery.com/jquery-2.0.2.min.js"></script>
+  <title>Крестики-нолики на javascript</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+    <div class="table">
+      <div class="cell" id="0" onclick="move(0, 'player')"></div>
+      <div class="cell" id="1" onclick="move(1, 'player')"></div>
+      <div class="cell" id="2" onclick="move(2, 'player')"></div>
+      <div class="cell" id="3" onclick="move(3, 'player')"></div>
+      <div class="cell" id="4" onclick="move(4, 'player')"></div>
+      <div class="cell" id="5" onclick="move(5, 'player')"></div>
+      <div class="cell" id="6" onclick="move(6, 'player')"></div>
+      <div class="cell" id="7" onclick="move(7, 'player')"></div>
+      <div class="cell" id="8" onclick="move(8, 'player')"></div>
+    </div>
+  </div>
+  <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="filters hidden">
+              <defs>
+                  <filter id="blur">
+                      <feGaussianBlur in="SourceGraphic" stdDeviation="0,0" />
+                  </filter>
+              </defs>
+          </svg>
+          <div class="container">
+              <div class="content">
+                  <button class="open-modal">Открыть сабжи</button>
+
+              </div>
+              <div class="modal-overlay"></div>
+              <div class="modal-wrapper">
+                  <div class="modal js-blur">
+                      <button class="close-modal">×</button>
+                      <h2>Пасхалка</h2>
+                      <p>Кто прочитал тот сдохнет</p>
+                      <div class="papich">
+                        <video width="390" height="220" controls="controls" poster="" src="video/papich.mp4">
+                         </video>
+                        <button type="button" class="audio-on">Подрубить музыку</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="audio">
+          <audio src="audio/witcher.mp3" autoplay="autoplay" controls>
+           </audio>
+           </div>
+  <script type="text/javascript" src="scripts/script.js"></script>
+</body>
+</html>
